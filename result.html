@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are You ?</title>
+
+    <script>
+        var NumberOfWords = 36
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "Honest"
+words[2] = "Brave"
+words[3] = "Compassionate"
+words[4] = "Smart"
+words[5] = "Courageous"
+words[6] = "Unselfish"
+words[7] = "Loyal"
+words[8] = "Hard Working"
+words[9] = "Independent"
+words[10] = "Selfish"
+words[11] = "Responsible"
+words[12] = "Considerate"
+words[13] = "Self Confident"
+words[14] = "Humble"
+words[15] = "Kind"
+words[16] = "Strong"
+words[17] = "Pretty"
+words[18] = "Gentle"
+words[19] = "Joyful"
+words[20] = "Patriotic"
+words[21] = "Popular"
+words[22] = "Successful"
+words[23] = "Proper"
+words[24] = "Cool"
+words[25] = "Creative"
+words[26] = "Imaginative"
+words[27] = "Cute"
+words[28] = "Friendly"
+words[29] = "Adventurous"
+words[30] = "Humorous"
+words[31] = "Mischievous"
+words[32] = "Happy"
+words[33] = "Bright"
+words[34] = "Funny"
+words[35] = "Quiet"
+words[36] = "Lazy"
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
+    </script>
+
+    <style>
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1.2em;
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 40px 10px;
+        line-height: 1.65em;
+        background: #be641a;
+        color: #fff;
+        font-weight: 300;
+      }
+      
+      h1 {
+        text-align: center;
+        margin: 20% 0 5% 0;
+        font-size: larger;
+      }
+      
+      #wordbox {
+          /*opacity: 0;*/
+          margin: 30px auto 0;
+          display: block;
+          width: 300px;
+          height: 40px;
+          font-size: 30px;
+          text-align: center;
+          background: #fff;
+          border-radius: 6px;
+          color: black;
+          transition: 1s linear;
+      }
+      
+      #button {
+        background: #0b7fba;
+          border: 0;
+          color: #fff;
+          font-size: 20px;
+          padding: 1em 2em;
+          cursor: pointer;
+          margin: 0 auto 60px;
+          display: block;
+          text-align: center;
+          border-radius: 6px;
+          font-weight: bold;
+      }
+
+      #button2 {
+        background: #0b7fba;
+          border: 0;
+          color: #fff;
+          font-size: 20px;
+          padding: 1em 2em;
+          cursor: pointer;
+          margin: 0 auto 60px;
+          display: block;
+          text-align: center;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+      }
+      #button3 {
+        background: #0b7fba;
+          border: 0;
+          color: #fff;
+          font-size: 20px;
+          padding: 1em 2em;
+          cursor: pointer;
+          margin: 0 auto 60px;
+          display: block;
+          text-align: center;
+          border-radius: 6px;
+          font-weight: bold;
+          text-decoration: none;
+      }
+      #button:active{background-color: #3797c7;}
+      #button2:active{background-color: #3797c7;}
+      p{text-align: center; font-size: 30px;}
+
+      </style>
+</head>
+<body onload="console.log(PickRandomWord(document.WordForm))">
+<p><b>YOU ARE</b></p>
+<FORM NAME="WordForm">    
+<INPUT TYPE=TEXT readonly NAME="WordBox" id="wordbox"><BR> 
+</FORM><br>
+<a href="whatsapp://send?text= Click this link to see the MAGIC - https://santhosh672.github.io/whoareyou/ OPEN FAST!! " data-action="share/whatsapp/share" id="button2">Share to your friend</a><br>
+</body>
+</html>
